@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div id="menuPanel" class="menu-panel">
+        <button class="menu-btn menu-panel-btn" onclick="toggleMenu()">&#9776;</button>
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#skills" onclick="toggleMenu()">Skills</a>
+        <a href="#experience" onclick="toggleMenu()">Experience</a>
+        <a href="#projects" onclick="toggleMenu()">Projects</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+    <div id="home" class="content-section">
+        <div class="home-container">
+            <div class="profile">
+                <img src="your-image.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
+                <p>Your Designation</p>
+            </div>
+            <div class="quote">
+                <p>"Your inspiring quote here."</p>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="content-section">
+        <h2>Skills</h2>
+        <div class="underline"></div>
+        <!-- Add your skills content here -->
+    </div>
+    <div id="experience" class="content-section">
+        <h2>Experience</h2>
+        <div class="underline"></div>
+        <!-- Add your experience content here -->
+    </div>
+    <div id="projects" class="content-section">
+        <h2>Projects</h2>
+        <div class="underline"></div>
+        <div class="projects-container">
+            <a href="https://example.com/project1" target="_blank" class="project-card">
+                <h3>Project 1</h3>
+                <p>Project 1 description here.</p>
+            </a>
+            <a href="https://example.com/project2" target="_blank" class="project-card">
+                <h3>Project 2</h3>
+                <p>Project 2 description here.</p>
+            </a>
+            <a href="https://example.com/project3" target="_blank" class="project-card">
+                <h3>Project 3</h3>
+                <p>Project 3 description here.</p>
+            </a>
+        </div>
+    </div>
+    <div id="contact" class="content-section">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Email: example@example.com</p>
+                <p>Phone: +1234567890</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com" target="_blank"><img src="linkedin-logo.png" class="social-logo" alt="LinkedIn"></a>
+                    <a href="https://www.github.com" target="_blank"><img src="github-logo.png" class="social-logo" alt="GitHub"></a>
+                    <a href="https://leetcode.com" target="_blank"><img src="leetcode-logo.png" class="social-logo" alt="LeetCode"></a>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="contact-form">
+                <form action="your link for the form" method="post">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
